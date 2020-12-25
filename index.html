@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="dashes"></div>
+    <div id="">Словарь
+        <label for="dictionaryWords"> введите слова через запятую  </label>
+        <input type="text" id="dictionaryWords" value="lIght,lime,slime,ball,lime,libe,line,liqe">   
+        
+    </div>
+    <div id="search">
+        <label for="search">Поиск по словарю</label>
+        <input type="text" name="search" id="search" onchange="autoFill(this.value, document.getElementById('dictionaryWords').value.split(','))">        
+    <p id="autoFill"></p>
+    </div>
+</body>
+<script src="./addDashes.js" ></script>
+<script src="./autoFill.js" ></script>
+</html>
